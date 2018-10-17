@@ -15,6 +15,7 @@ class createdataController extends Controller
             'name' => 'required',
             'semester' => 'required',
             'reg_no' => 'required|unique:students',
+            'image' => 'required',
     	]);
     	if ($request->hasFile('image')) {
     		$image = $request->file('image');

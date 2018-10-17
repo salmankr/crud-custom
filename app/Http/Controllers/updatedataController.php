@@ -15,6 +15,7 @@ class updatedataController extends Controller
             'name' => 'required',
             'semester' => 'required',
             'reg_no' => 'required',
+            'image' => 'required',
         ]);
         if ($request->hasFile('image')) {
     		$image = $request->file('image');

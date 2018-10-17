@@ -19,7 +19,7 @@
 	  </div>
 	  <div class="form-group">
 	    <label for="image">Upload image</label>
-	    <input class="d-block" type="file" name="image" required="required">
+	    <input class="d-block" type="file" name="image">
 	  </div>
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</form>
