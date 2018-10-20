@@ -33,10 +33,10 @@ class updatedataController extends Controller
                 $data->reg_no = $request->get('reg_no');
                 $data->img_name = $image_name;
                 $data->save();
-                return redirect('/semester-category/students-list/'.$id)->with('success', 'Student data has been updated');
+                return redirect('/students-list/'.$id)->with('success', 'Student data has been updated');
             }
     		else{
-                return redirect('/semester-category/students-list/'.$id.'/update')->with('error', 'file type not allowed');
+                return redirect('/students-list/'.$id.'/update')->with('error', 'file type not allowed');
             }
     	}
     	

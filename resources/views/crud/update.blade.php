@@ -2,7 +2,7 @@
 @section('title', 'update')
 @section('body')
     <h2 class="text-muted">Update form for {{$student->name}}</h2>
-	<form class="col-lg-6 col-sm-8 col-xs-12" action="/semester-category/students-list/{{$student->id}}/update" method="post" enctype="multipart/form-data">
+	<form class="col-lg-6 col-sm-8 col-xs-12" action="/students-list/{{$student->id}}/update" method="post" enctype="multipart/form-data">
 		{{csrf_field()}}
 		{{method_field('PUT')}}
 	  <div class="form-group">
