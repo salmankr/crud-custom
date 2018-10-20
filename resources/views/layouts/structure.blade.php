@@ -13,7 +13,7 @@
 				        <a class="nav-link" href="/">Home</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="/semester-category">Index</a>
+				        <a class="nav-link" href="/students-list">Index</a>
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link" href="/add-new-student">Create</a>

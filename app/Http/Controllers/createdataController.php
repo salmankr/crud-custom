@@ -31,7 +31,7 @@ class createdataController extends Controller
                 $data->reg_no = $request->get('reg_no');
                 $data->img_name = $image_name;
                 $data->save();
-                return redirect('/semester-category')->with('success', 'new student has been added');
+                return redirect('/students-list')->with('success', 'new student has been added');
             }
     		else{
                 return redirect('/add-new-student')->with('error', 'file type not allowed');

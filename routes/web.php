@@ -16,9 +16,8 @@ Route::get('/', 'welcomeController@index');
 
 
 //for displaying data
-Route::get('/semester-category', 'displaydataController@index'); //main page where search form is available
-Route::post('/semester-category/students-list', 'displaydataController@students'); //for passing semester number via 'post' method and displaying list of students in that semester
-Route::get('/semester-category/students-list/{id}', 'displaydataController@studentdata');//display single student data
+Route::get('/students-list', 'displaydataController@index'); //main page where search form is available
+Route::get('/students-list/{id}', 'displaydataController@studentdata');//display single student data
 
 
 //for creating database entries
@@ -27,9 +26,9 @@ Route::post('/add-new-student', 'createdataController@store'); //store data to d
 
 
 //for updating database entries
-Route::get('/semester-category/students-list/{id}/update', 'updatedataController@updateform');//route to update view form
-Route::put('/semester-category/students-list/{id}/update', 'updatedataController@updatedata');//storing updated data to db
+Route::get('/students-list/{id}/update', 'updatedataController@updateform');//route to update view form
+Route::put('/students-list/{id}/update', 'updatedataController@updatedata');//storing updated data to db
 
 
 //for delete entry
-Route::delete('/semester-category/students-list/{id}/delete', 'deletedataController@delete'); //delete selected id row
+Route::delete('/students-list/{id}/delete', 'deletedataController@delete'); //delete selected id row

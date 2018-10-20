@@ -13,10 +13,10 @@ class deletedataController extends Controller
     	$delete = unlink(public_path().'/images/'.$image_name);
     	if ($delete) {
     		$student->delete();
-    		return redirect('/semester-category')->with('success', 'Student data has been deleted');
+    		return redirect('/students-list')->with('success', 'Student data has been deleted');
     	}
     	else{
-    		return redirect('/semester-category')->with('success', 'Some error occured');
+    		return redirect('/students-list')->with('success', 'Some error occured');
     	}
     }
 }
